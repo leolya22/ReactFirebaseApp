@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invisible {
+  display: none;
+}
+
+.prod {
+  width: 300px;
+  height: 500px;
+  border: 3px solid black;
+  margin: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: rgb(107, 110, 255);
+  justify-content: center;
+  text-align: center;
+}
+
+.all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 5px solid #213547;
+  margin: 20px;
+  background-color: #b1d0ee;
+}
+
+.err {
+  color: red;
+}
+
+.pnf {
+  color: white;
+}
+
+.notFound {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.volver:hover {
+  background-color: rgba(168, 177, 202, 0.17);
+  color: #646cff;
+}
+
+.volver {
+  background-color: #646cff;
+  color: black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.loader {
+  padding: 50px;
+  border: dashed 10px rgb(97, 186, 238);
+  border-radius: 50%;
+  animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(1.0);
+  }
+  50%{
+    transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.0);
+  }
+}
+
+.navbar {
+  margin: 10px 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 150px 400px;
+  background-color: #b1d0ee;
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 100px;
+  background-color: #646cff;
+  border: 7px solid black;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  height: 25px;
+}
+
+.button {
+  background-color: #b1d0ee;
+  color: black;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #000dff;
+  color: #b1b5ff;
+}
+
+.log {
+  font-size: smaller;
+  color:white
+}
+
+.log:hover {
+  color: #000dff;
+}
+
+.new {
+  font-size: 150px;
+  margin-bottom: 65px;
+}
+
+.small_img {
+  width: 200px;
+  height: 150px;
+}
+
+.delete {
+  color: red;
+}
+
+.delete:hover {
+  color: red;
+  border: 1px red solid;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  margin: 15px;
+}
